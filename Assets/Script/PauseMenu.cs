@@ -9,7 +9,7 @@ using static System.Net.Mime.MediaTypeNames;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuPanel; // PauseMenuPanel 오브젝트 참조
-
+    public GameObject settingsPanel;
     private bool isPaused = false;
 
     void Start()
@@ -53,6 +53,7 @@ public class PauseMenu : MonoBehaviour
 
     public void OpenSettings()
     {
+        settingsPanel.SetActive(true); // SettingsPanel 활성화
         UnityEngine.Debug.Log("설정 창 열기"); // 설정 창 로직 추가 가능
     }
 
